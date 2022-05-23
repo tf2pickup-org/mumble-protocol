@@ -18,6 +18,9 @@
     "protocol",
     "typescript"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Michał Garapich <garrappachc@gmail.com>",
   "license": "MIT",
   "bugs": {
