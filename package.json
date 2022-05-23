@@ -1,0 +1,38 @@
+{
+  "name": "@tf2pickup-org/mumble-protocol",
+  "version": "0.0.1",
+  "description": "Mumble protocol typings",
+  "main": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "generate-proto": "protoc --ts_out ./ --ts_opt eslint_disable --proto_path . Mumble.proto",
+    "build": "tsc",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tf2pickup-org/mumble-protocol.git"
+  },
+  "keywords": [
+    "mumble",
+    "protocol",
+    "typescript"
+  ],
+  "author": "Michał Garapich <garrappachc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tf2pickup-org/mumble-protocol/issues"
+  },
+  "homepage": "https://github.com/tf2pickup-org/mumble-protocol#readme",
+  "dependencies": {
+    "@protobuf-ts/runtime": "2.6.0"
+  },
+  "devDependencies": {
+    "@protobuf-ts/plugin": "2.6.0",
+    "@release-it/conventional-changelog": "5.0.0",
+    "@tsconfig/node16": "1.0.2",
+    "release-it": "15.0.0",
+    "typescript": "4.6.4"
+  },
+  "packageManager": "yarn@3.2.1"
+}
