@@ -1,5 +1,13 @@
 
 
+## [0.0.4](https://github.com/tf2pickup-org/mumble-protocol/compare/0.0.3...0.0.4) (2022-05-24)
+
+
+### Bug Fixes
+
+* **build:** fix types entry point ([458445b](https://github.com/tf2pickup-org/mumble-protocol/commit/458445bf3e23db1c8f245e574df2a26c2f74b223))
+* **build:** ignore source files ([f57db6e](https://github.com/tf2pickup-org/mumble-protocol/commit/f57db6eb177786ac0cd0b194a44d027faaa3e34c))
+
 ## [0.0.3](https://github.com/tf2pickup-org/mumble-protocol/compare/0.0.2...0.0.3) (2022-05-24)
 
 

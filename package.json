@@ -1,6 +1,6 @@
 {
   "name": "@tf2pickup-org/mumble-protocol",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mumble protocol typings",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
