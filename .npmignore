@@ -1,5 +1,4 @@
 Mumble.proto
-Mumble.ts
 jest.config.ts
 renovate.json
 
@@ -19,3 +18,7 @@ lerna-debug.log*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Source files
+Mumble.ts
+index.ts
