@@ -1,5 +1,12 @@
 
 
+## [0.0.3](https://github.com/tf2pickup-org/mumble-protocol/compare/0.0.2...0.0.3) (2022-05-24)
+
+
+### Bug Fixes
+
+* **build:** ignore Mumble.ts ([d8ffb29](https://github.com/tf2pickup-org/mumble-protocol/commit/d8ffb298bc82bee253ad94bb610248c60df32f0d))
+
 ## [0.0.2](https://github.com/tf2pickup-org/mumble-protocol/compare/0.0.1...0.0.2) (2022-05-23)
 
 
