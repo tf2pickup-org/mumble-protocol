@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Mumble protocol typings",
   "main": "dist/index.js",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "generate-proto": "protoc --ts_out ./ --ts_opt eslint_disable --proto_path . Mumble.proto",
     "build": "tsc",
