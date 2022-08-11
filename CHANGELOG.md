@@ -1,5 +1,12 @@
 
 
+## [1.0.1](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.0...1.0.1) (2022-08-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @protobuf-ts/runtime to v2.7.0 ([06a5630](https://github.com/tf2pickup-org/mumble-protocol/commit/06a5630f275f68467e72a7d7f695ed3258676da4))
+
 # [1.0.0](https://github.com/tf2pickup-org/mumble-protocol/compare/0.0.4...1.0.0) (2022-06-06)
 
 ## [0.0.4](https://github.com/tf2pickup-org/mumble-protocol/compare/0.0.3...0.0.4) (2022-05-24)
