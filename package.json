@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/tf2pickup-org/mumble-protocol#readme",
   "dependencies": {
-    "@protobuf-ts/runtime": "2.8.0"
+    "@protobuf-ts/runtime": "2.8.1"
   },
   "devDependencies": {
     "@protobuf-ts/plugin": "2.8.1",
