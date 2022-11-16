@@ -255,54 +255,61 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protobuf-ts/plugin-framework@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "@protobuf-ts/plugin-framework@npm:2.8.1"
+"@protobuf-ts/plugin-framework@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "@protobuf-ts/plugin-framework@npm:2.8.2"
   dependencies:
-    "@protobuf-ts/runtime": ^2.8.1
+    "@protobuf-ts/runtime": ^2.8.2
     typescript: ^3.9
-  checksum: 0c17968671ff598693243fb8ac3dd02db3aa10826ccb6b9c8985803ea8f344fd334cc712183f7dc01d43b05b8904afd0c53c1391ed9be6f7cdbdf193caae5fc6
+  checksum: 1dfb39a10c1995405b2009eff8d606a71a5050e7996ef4892775cea28176513c328a536022f0b5abca8c9dd75bb6d7d9f902bc54710e1931b5ee577fe738be0c
   languageName: node
   linkType: hard
 
-"@protobuf-ts/plugin@npm:2.8.1":
-  version: 2.8.1
-  resolution: "@protobuf-ts/plugin@npm:2.8.1"
+"@protobuf-ts/plugin@npm:2.8.2":
+  version: 2.8.2
+  resolution: "@protobuf-ts/plugin@npm:2.8.2"
   dependencies:
-    "@protobuf-ts/plugin-framework": ^2.8.1
-    "@protobuf-ts/protoc": ^2.8.1
-    "@protobuf-ts/runtime": ^2.8.1
-    "@protobuf-ts/runtime-rpc": ^2.8.1
+    "@protobuf-ts/plugin-framework": ^2.8.2
+    "@protobuf-ts/protoc": ^2.8.2
+    "@protobuf-ts/runtime": ^2.8.2
+    "@protobuf-ts/runtime-rpc": ^2.8.2
     typescript: ^3.9
   bin:
     protoc-gen-dump: bin/protoc-gen-dump
     protoc-gen-ts: bin/protoc-gen-ts
-  checksum: 61fdf4054134e9c80a8b1b854ba288df8f34803c2bca105247576bf657e1c3b2514c3ef56e6f5b04aa863e5cfc35c65a80547dd49ca91c7398c4f54c56302f8f
+  checksum: 4f8a00e14360a5b5a24c8347b02901cb497b314cae1d06b66ec9c4bb619bbde2a473e44e0dfcf9305285e6811803d82a15993c862479c9449a4d6d92911f385f
   languageName: node
   linkType: hard
 
-"@protobuf-ts/protoc@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "@protobuf-ts/protoc@npm:2.8.1"
+"@protobuf-ts/protoc@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "@protobuf-ts/protoc@npm:2.8.2"
   bin:
     protoc: protoc.js
-  checksum: 2b163a03cd416bc63c9042bbe085792d9495ba08c44ba742452ee3df4f9a10e70d6c6187e9cf55600aade91a71994fad5ce64a883de0d7c4944358b9ade44645
+  checksum: b06f64aa47384bff232afa32c1666fd3cd598519dfcefca888a403bb55b0a40b765cb0a319b89ce5d1e1eb79fe4bdf992e8c91ff98b66b25c80dd282964f98da
   languageName: node
   linkType: hard
 
-"@protobuf-ts/runtime-rpc@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "@protobuf-ts/runtime-rpc@npm:2.8.1"
+"@protobuf-ts/runtime-rpc@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "@protobuf-ts/runtime-rpc@npm:2.8.2"
   dependencies:
-    "@protobuf-ts/runtime": ^2.8.1
-  checksum: 3a23f88322aa4fe68ba52bb07ee251460d21107e7776e26e2561265d0727ce3698a9c7e44939dbc12907d586768c7699c7ae81e82339f1446dd75c23b9ab6e76
+    "@protobuf-ts/runtime": ^2.8.2
+  checksum: a75847f34e93f3d3d17558797a3cfa7b3aa96207f88b00943fdf3e661c5c3b67f112f307b2b0c3e4bb3d40d435fdb41458dde492436befa738677e1e3d8d369d
   languageName: node
   linkType: hard
 
-"@protobuf-ts/runtime@npm:2.8.1, @protobuf-ts/runtime@npm:^2.8.1":
+"@protobuf-ts/runtime@npm:2.8.1":
   version: 2.8.1
   resolution: "@protobuf-ts/runtime@npm:2.8.1"
   checksum: 456ce844edf22d1d744c616c661c0aee605d756e4d57fba35c721503f289b6bd7b2fd6c75501169b4d1dc94843dcfa397040a88003bf81b0268a91ad4e222013
+  languageName: node
+  linkType: hard
+
+"@protobuf-ts/runtime@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "@protobuf-ts/runtime@npm:2.8.2"
+  checksum: ab322e832bfb347b271a8862b8ef3db27ffa380f9c49f94acb410534586a282ebd8af96d4459f959ad0fe5fbf34183f3f4fe512e50c9a4331b742a7445b16c92
   languageName: node
   linkType: hard
 
@@ -347,7 +354,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@tf2pickup-org/mumble-protocol@workspace:."
   dependencies:
-    "@protobuf-ts/plugin": 2.8.1
+    "@protobuf-ts/plugin": 2.8.2
     "@protobuf-ts/runtime": 2.8.1
     "@release-it/conventional-changelog": 5.1.1
     "@tsconfig/node16": 1.0.3
