@@ -335,7 +335,7 @@ __metadata:
     "@protobuf-ts/runtime": 2.8.2
     "@release-it/conventional-changelog": 5.1.1
     "@tsconfig/node16": 1.0.3
-    release-it: 15.5.1
+    release-it: 15.6.0
     typescript: 4.9.4
   languageName: unknown
   linkType: soft
@@ -569,13 +569,6 @@ __metadata:
   dependencies:
     retry: 0.13.1
   checksum: 38a7152ff7265a9321ea214b9c69e8224ab1febbdec98efbbde6e562f17ff68405569b796b1c5271f354aef8783665d29953f051f68c1fc45306e61aec82fdc4
-  languageName: node
-  linkType: hard
-
-"asynckit@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "asynckit@npm:0.4.0"
-  checksum: 7b78c451df768adba04e2d02e63e2d0bf3b07adcd6e42b4cf665cb7ce899bedd344c69a1dcbce355b5f972d597b25aaa1c1742b52cffd9caccb22f348114f6be
   languageName: node
   linkType: hard
 
@@ -881,15 +874,6 @@ __metadata:
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
-  languageName: node
-  linkType: hard
-
-"combined-stream@npm:^1.0.8":
-  version: 1.0.8
-  resolution: "combined-stream@npm:1.0.8"
-  dependencies:
-    delayed-stream: ~1.0.0
-  checksum: 49fa4aeb4916567e33ea81d088f6584749fc90c7abec76fd516bf1c5aa5c79f3584b5ba3de6b86d26ddd64bae5329c4c7479343250cfe71c75bb366eae53bb7c
   languageName: node
   linkType: hard
 
@@ -1315,13 +1299,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"delayed-stream@npm:~1.0.0":
-  version: 1.0.0
-  resolution: "delayed-stream@npm:1.0.0"
-  checksum: 46fe6e83e2cb1d85ba50bd52803c68be9bd953282fa7096f51fc29edd5d67ff84ff753c51966061e5ba7cb5e47ef6d36a91924eddb7f3f3483b1c560f77a0020
-  languageName: node
-  linkType: hard
-
 "depd@npm:2.0.0":
   version: 2.0.0
   resolution: "depd@npm:2.0.0"
@@ -1710,17 +1687,6 @@ __metadata:
   version: 2.1.2
   resolution: "form-data-encoder@npm:2.1.2"
   checksum: 5c6401e3ebd2ba2adfa151c9fbd1df5adae8b1dd7bca5b18ab25ad1f9b83e20ddffb6b9ff77f5006b93d7ec2032e22828c9543c0bd4b2bc5b05335c31a3ba5b9
-  languageName: node
-  linkType: hard
-
-"form-data@npm:4.0.0":
-  version: 4.0.0
-  resolution: "form-data@npm:4.0.0"
-  dependencies:
-    asynckit: ^0.4.0
-    combined-stream: ^1.0.8
-    mime-types: ^2.1.12
-  checksum: 01135bf8675f9d5c61ff18e2e2932f719ca4de964e3be90ef4c36aacfc7b9cb2fceb5eca0b7e0190e3383fe51c5b37f4cb80b62ca06a99aaabfcfd6ac7c9328c
   languageName: node
   linkType: hard
 
@@ -2949,7 +2915,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime-types@npm:2.1.35, mime-types@npm:^2.1.12":
+"mime-types@npm:2.1.35":
   version: 2.1.35
   resolution: "mime-types@npm:2.1.35"
   dependencies:
@@ -3783,9 +3749,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"release-it@npm:15.5.1":
-  version: 15.5.1
-  resolution: "release-it@npm:15.5.1"
+"release-it@npm:15.6.0":
+  version: 15.6.0
+  resolution: "release-it@npm:15.6.0"
   dependencies:
     "@iarna/toml": 2.2.5
     "@octokit/rest": 19.0.5
@@ -3793,7 +3759,6 @@ __metadata:
     chalk: 5.1.2
     cosmiconfig: 8.0.0
     execa: 6.1.0
-    form-data: 4.0.0
     git-url-parse: 13.1.0
     globby: 13.1.2
     got: 12.5.3
@@ -3816,7 +3781,7 @@ __metadata:
     yargs-parser: 21.1.1
   bin:
     release-it: bin/release-it.js
-  checksum: 910c528a746bec60ad5f5a75f3d5efdc57cb75af721c408106980895189ea018f5a0384e461c83eccbec6e2e22f0edb47830f51c5a5596cc3b738128c3c340b0
+  checksum: b6a1ee059f46bceddf7b192b60d5baa50506f47f78e8e877ce948ac5304ed3316153c38f60354aa8de8426cabf80ab43cb19c79b49f173d9a6021399067b399e
   languageName: node
   linkType: hard
 
