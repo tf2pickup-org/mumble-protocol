@@ -351,7 +351,7 @@ __metadata:
     "@protobuf-ts/runtime": 2.8.2
     "@release-it/conventional-changelog": 5.1.1
     "@tsconfig/node16": 1.0.3
-    release-it: 15.6.1
+    release-it: 15.7.0
     typescript: 4.9.5
   languageName: unknown
   linkType: soft
@@ -3772,9 +3772,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"release-it@npm:15.6.1":
-  version: 15.6.1
-  resolution: "release-it@npm:15.6.1"
+"release-it@npm:15.7.0":
+  version: 15.7.0
+  resolution: "release-it@npm:15.7.0"
   dependencies:
     "@iarna/toml": 2.2.5
     "@octokit/rest": 19.0.7
@@ -3804,7 +3804,7 @@ __metadata:
     yargs-parser: 21.1.1
   bin:
     release-it: bin/release-it.js
-  checksum: 701b81d56756f1007c45a1292124973ad002eae5779caa37c8e3b739f8cc9f3ed40f23361da5117666fff5eb12a8928f0fb3dced1d9bb9c6169e051246546c0d
+  checksum: 431cebd514c0cc4aee4b0ffa045323c4ef7e65f368b99c7c4c325adedd91f54fb82c3303733e2f0f61c0d0072ff0629bbe4fc4d18646ed3a755f42f5b5a77ce2
   languageName: node
   linkType: hard
 
