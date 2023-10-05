@@ -3,14 +3,15 @@ name: build
 on:
   push:
     branches:
-      - 'master'
-      - '*.*.*'
+      - "master"
+      - "*.*.*"
+      - "renovate/**"
     tags:
-      - '*.*.*'
+      - "*.*.*"
   pull_request:
     branches:
-      - 'master'
-      - '*.*.*'
+      - "master"
+      - "*.*.*"
 
 jobs:
   build:
