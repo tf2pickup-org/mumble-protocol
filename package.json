@@ -34,7 +34,7 @@
     "@protobuf-ts/plugin": "2.9.1",
     "@release-it/conventional-changelog": "8.0.0",
     "@tsconfig/node16": "16.1.1",
-    "release-it": "16.2.1",
+    "release-it": "17.0.0",
     "typescript": "5.2.2"
   },
   "packageManager": "yarn@3.6.4"
