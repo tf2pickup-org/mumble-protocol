@@ -307,9 +307,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@release-it/conventional-changelog@npm:8.0.0":
-  version: 8.0.0
-  resolution: "@release-it/conventional-changelog@npm:8.0.0"
+"@release-it/conventional-changelog@npm:8.0.1":
+  version: 8.0.1
+  resolution: "@release-it/conventional-changelog@npm:8.0.1"
   dependencies:
     concat-stream: ^2.0.0
     conventional-changelog: ^5.1.0
@@ -317,7 +317,7 @@ __metadata:
     semver: ^7.5.4
   peerDependencies:
     release-it: ^17.0.0
-  checksum: 13d4a30ec372c2a2adb015bc79d2d044f57de75dcc119a205d3ca7d67b9e37fe17d480c3e9abe4861f6ec98bd8382c42905fdb386a4e53d24dfcdba641bc5d0b
+  checksum: 8b0737055c4f61ec05014da130c592ba69e4e81163e4ab75020440594cf1f1138bc6d55a59734d9eac051af1e7db8927ea502a94aa16f7f43945def48c5f27eb
   languageName: node
   linkType: hard
 
@@ -357,7 +357,7 @@ __metadata:
   dependencies:
     "@protobuf-ts/plugin": 2.9.1
     "@protobuf-ts/runtime": 2.9.1
-    "@release-it/conventional-changelog": 8.0.0
+    "@release-it/conventional-changelog": 8.0.1
     "@tsconfig/node16": 16.1.1
     release-it: 17.0.0
     typescript: 5.2.2
