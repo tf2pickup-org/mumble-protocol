@@ -31,7 +31,7 @@
     "@protobuf-ts/runtime": "2.9.2"
   },
   "devDependencies": {
-    "@protobuf-ts/plugin": "2.9.1",
+    "@protobuf-ts/plugin": "2.9.2",
     "@release-it/conventional-changelog": "8.0.1",
     "@tsconfig/node16": "16.1.1",
     "release-it": "17.0.0",
