@@ -300,7 +300,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protobuf-ts/runtime@npm:2.9.1, @protobuf-ts/runtime@npm:^2.9.1":
+"@protobuf-ts/runtime@npm:2.9.2":
+  version: 2.9.2
+  resolution: "@protobuf-ts/runtime@npm:2.9.2"
+  checksum: 429e66226984186cf95e9f89e5d2262f2655354a300c5701628f7687548382e6b4cb8aa95cb7e4bb7583a4c6ffa1645b43564741502bf1ea8996e8dc86edadee
+  languageName: node
+  linkType: hard
+
+"@protobuf-ts/runtime@npm:^2.9.1":
   version: 2.9.1
   resolution: "@protobuf-ts/runtime@npm:2.9.1"
   checksum: 8507103d7bf790c57c383bfc711e1c2766fab34c4a4d0ec30395f6da8f06e86a9e8b7af0f00cf19a8a0ecaf2feaf75cf3787ee1fd1d1d8ecedba5fc290113e15
@@ -356,7 +363,7 @@ __metadata:
   resolution: "@tf2pickup-org/mumble-protocol@workspace:."
   dependencies:
     "@protobuf-ts/plugin": 2.9.1
-    "@protobuf-ts/runtime": 2.9.1
+    "@protobuf-ts/runtime": 2.9.2
     "@release-it/conventional-changelog": 8.0.1
     "@tsconfig/node16": 16.1.1
     release-it: 17.0.0
