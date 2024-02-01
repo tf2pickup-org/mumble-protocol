@@ -26,20 +26,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: yarn
+          cache: pnpm
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: pnpm install
 
       - name: Install protoc
         uses: arduino/setup-protoc@v1
 
       - name: Generate proto files
-        run: yarn generate-proto
+        run: pnpm generate-proto
 
       - name: Build
-        run: yarn build
+        run: pnpm build
