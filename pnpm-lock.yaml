@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@protobuf-ts/plugin':
-    specifier: 2.9.3
-    version: 2.9.3
+    specifier: 2.9.4
+    version: 2.9.4
   '@release-it/conventional-changelog':
     specifier: 8.0.1
     version: 8.0.1(release-it@17.1.1)
@@ -211,37 +211,42 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@protobuf-ts/plugin-framework@2.9.3:
-    resolution: {integrity: sha512-iqdkhAu7fGPvBCVOoAEEFJ1/oaGIBoNIMgSv2WonTNJVHxv5FvvAfWFn6nG/eta34fHRZT38ZXTaYcMUkv8AiQ==}
+  /@protobuf-ts/plugin-framework@2.9.4:
+    resolution: {integrity: sha512-9nuX1kjdMliv+Pes8dQCKyVhjKgNNfwxVHg+tx3fLXSfZZRcUHMc1PMwB9/vTvc6gBKt9QGz5ERqSqZc0++E9A==}
     dependencies:
-      '@protobuf-ts/runtime': 2.9.3
+      '@protobuf-ts/runtime': 2.9.4
       typescript: 3.9.10
     dev: true
 
-  /@protobuf-ts/plugin@2.9.3:
-    resolution: {integrity: sha512-tHYACv+nnIV2eoiMxeZhrgMqGiUktzUzrhfgnROg/rr8TecPLp9v5/yqNibN+bad5k7d57aqlTuQKhFl+J4W/g==}
+  /@protobuf-ts/plugin@2.9.4:
+    resolution: {integrity: sha512-Db5Laq5T3mc6ERZvhIhkj1rn57/p8gbWiCKxQWbZBBl20wMuqKoHbRw4tuD7FyXi+IkwTToaNVXymv5CY3E8Rw==}
     hasBin: true
     dependencies:
-      '@protobuf-ts/plugin-framework': 2.9.3
-      '@protobuf-ts/protoc': 2.9.3
-      '@protobuf-ts/runtime': 2.9.3
-      '@protobuf-ts/runtime-rpc': 2.9.3
+      '@protobuf-ts/plugin-framework': 2.9.4
+      '@protobuf-ts/protoc': 2.9.4
+      '@protobuf-ts/runtime': 2.9.4
+      '@protobuf-ts/runtime-rpc': 2.9.4
       typescript: 3.9.10
     dev: true
 
-  /@protobuf-ts/protoc@2.9.3:
-    resolution: {integrity: sha512-TJ0Ycx/CIBqpB4wpKt6K05kjXj6zv36s/qpdCT/wdJBhpayOVBqLF5NpLp3WIiw1PmIxvqalB6QHKjvnLzGKLA==}
+  /@protobuf-ts/protoc@2.9.4:
+    resolution: {integrity: sha512-hQX+nOhFtrA+YdAXsXEDrLoGJqXHpgv4+BueYF0S9hy/Jq0VRTVlJS1Etmf4qlMt/WdigEes5LOd/LDzui4GIQ==}
     hasBin: true
     dev: true
 
-  /@protobuf-ts/runtime-rpc@2.9.3:
-    resolution: {integrity: sha512-WelHpctvZeG8yhbb7tnsrLzotq9xjMCXuGuhJ8qMyEdNoBBEodbXseofAYFTebo2/PN2LzyEq3X6vwr5f8jqTA==}
+  /@protobuf-ts/runtime-rpc@2.9.4:
+    resolution: {integrity: sha512-y9L9JgnZxXFqH5vD4d7j9duWvIJ7AShyBRoNKJGhu9Q27qIbchfzli66H9RvrQNIFk5ER7z1Twe059WZGqERcA==}
     dependencies:
-      '@protobuf-ts/runtime': 2.9.3
+      '@protobuf-ts/runtime': 2.9.4
     dev: true
 
   /@protobuf-ts/runtime@2.9.3:
     resolution: {integrity: sha512-nivzCpg/qYD0RX2OmHOahJALb8ndjGmUhNBcTJ0BbXoqKwCSM6vYA+vegzS3rhuaPgbyC7Ec8idlnizzUfIRuw==}
+    dev: false
+
+  /@protobuf-ts/runtime@2.9.4:
+    resolution: {integrity: sha512-vHRFWtJJB/SiogWDF0ypoKfRIZ41Kq+G9cEFj6Qm1eQaAhJ1LDFvgZ7Ja4tb3iLOQhz0PaoPnnOijF1qmEqTxg==}
+    dev: true
 
   /@release-it/conventional-changelog@8.0.1(release-it@17.1.1):
     resolution: {integrity: sha512-pwc9jaBYDaSX5TXw6rEnPfqDkKJN2sFBhYpON1kBi9T3sA9EOBncC4ed0Bv3L1ciNb6eqEJXPfp+tQMqVlv/eg==}
