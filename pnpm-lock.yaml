@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@protobuf-ts/runtime':
-    specifier: 2.9.3
-    version: 2.9.3
+    specifier: 2.9.4
+    version: 2.9.4
 
 devDependencies:
   '@protobuf-ts/plugin':
@@ -240,13 +240,8 @@ packages:
       '@protobuf-ts/runtime': 2.9.4
     dev: true
 
-  /@protobuf-ts/runtime@2.9.3:
-    resolution: {integrity: sha512-nivzCpg/qYD0RX2OmHOahJALb8ndjGmUhNBcTJ0BbXoqKwCSM6vYA+vegzS3rhuaPgbyC7Ec8idlnizzUfIRuw==}
-    dev: false
-
   /@protobuf-ts/runtime@2.9.4:
     resolution: {integrity: sha512-vHRFWtJJB/SiogWDF0ypoKfRIZ41Kq+G9cEFj6Qm1eQaAhJ1LDFvgZ7Ja4tb3iLOQhz0PaoPnnOijF1qmEqTxg==}
-    dev: true
 
   /@release-it/conventional-changelog@8.0.1(release-it@17.1.1):
     resolution: {integrity: sha512-pwc9jaBYDaSX5TXw6rEnPfqDkKJN2sFBhYpON1kBi9T3sA9EOBncC4ed0Bv3L1ciNb6eqEJXPfp+tQMqVlv/eg==}
