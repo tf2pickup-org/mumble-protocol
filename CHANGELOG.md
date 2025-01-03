@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.7...1.0.8) (2025-01-03)
+
+
+### Bug Fixes
+
+* **build:** resolve full import paths ([0eb192f](https://github.com/tf2pickup-org/mumble-protocol/commit/0eb192ff11ff50dabf853efb3c39340b18be61e5))
+
 ## [1.0.7](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.6...1.0.7) (2025-01-03)
 
 
