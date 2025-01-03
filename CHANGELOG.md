@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.6...1.0.7) (2025-01-03)
+
+
+### Bug Fixes
+
+* **build:** migrate to esm properly ([712b49e](https://github.com/tf2pickup-org/mumble-protocol/commit/712b49ec23e4260dd0e5577598aa96a13b7ad591))
+
 ## [1.0.6](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.5...1.0.6) (2025-01-02)
 
 
