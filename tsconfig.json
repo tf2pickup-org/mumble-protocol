@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "incremental": true,
-    "target": "es2018",
-    "module": "commonjs",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "strictNullChecks": true,
@@ -12,8 +14,7 @@
     "skipLibCheck": true,
     "outDir": "dist",
     "sourceMap": true,
-    "declaration": true,
-    "moduleResolution": "node"
+    "declaration": true
   },
   "exclude": [
     "node_modules",
