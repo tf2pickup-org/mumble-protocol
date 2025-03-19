@@ -13,8 +13,8 @@ importers:
         version: 2.9.5
     devDependencies:
       '@protobuf-ts/plugin':
-        specifier: 2.9.5
-        version: 2.9.5
+        specifier: 2.9.6
+        version: 2.9.6
       '@release-it/conventional-changelog':
         specifier: 10.0.0
         version: 10.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.1.2(@types/node@22.10.5)(typescript@5.8.2))
@@ -220,22 +220,25 @@ packages:
     resolution: {integrity: sha512-UA91GwWPhFExt3IizW6bOeY/pQ0BkuNwKjk9iQW9KqxluGCrg4VenZ0/L+2Y0+ZOtme72EVvg6v0zo3AMQRCeA==}
     engines: {node: '>=12'}
 
-  '@protobuf-ts/plugin-framework@2.9.5':
-    resolution: {integrity: sha512-DYNQ8Ga3xwPZMfaZGRCnDOcEdQZK9MorTXngVoFLnHWEE8zLhUjFVtdkChZtTih6rl8Z6akyA7hRgj/GrJF58Q==}
+  '@protobuf-ts/plugin-framework@2.9.6':
+    resolution: {integrity: sha512-w7A1RXrDCiVzcaRE6YJP7FCARuAFe/Vc4SNQnHAi4CF0V6mEtyjAYEIC5BNYgIRaJEqB26zzsBQjIem3R02SCA==}
 
-  '@protobuf-ts/plugin@2.9.5':
-    resolution: {integrity: sha512-KCzNRTFye837XdfPjS85gGzxgPGVDR3W8Px2G3etXuouNog9W+Cr+U0IBTFADrRWXC2x+OSNjXxrdZEiw+H5Cw==}
+  '@protobuf-ts/plugin@2.9.6':
+    resolution: {integrity: sha512-Wpv5rkXeu6E5Y4r0TjWE0bzRGddiTYl/RM+tLgVlS0r8CqOBqNAmlWv+s8ltf/F75rVrahUal0cpyhFwha9GRA==}
     hasBin: true
 
-  '@protobuf-ts/protoc@2.9.5':
-    resolution: {integrity: sha512-n6a7OHfr/Ubw483L6kNJB0wBCe/Ops0A652zB6J6nR2x1o+pjVFrMCeeQQsqxkYpQwQ8FCIETSxrMpfOBKTIvQ==}
+  '@protobuf-ts/protoc@2.9.6':
+    resolution: {integrity: sha512-c0XvAPDIBAovH9HxV8gBv8gzOTreQIqibcusrB1+DxvFiSvy+2V1tjbUmG5gJEbjk3aAOaoj0a3+QuE+P28xUw==}
     hasBin: true
 
-  '@protobuf-ts/runtime-rpc@2.9.5':
-    resolution: {integrity: sha512-NWAb1TaV4CR+BknZr1WRVT5Ws2AupVwGgRNes4oPAFrgLNXQotDFl2E6pmsjPwME8sAgJVzeSr7bUqQVyoAK2A==}
+  '@protobuf-ts/runtime-rpc@2.9.6':
+    resolution: {integrity: sha512-0UeqDRzNxgsh08lY5eWzFJNfD3gZ8Xf+WG1HzbIAbVAigzigwjwsYNNhTeas5H3gco1U5owTzCg177aambKOOw==}
 
   '@protobuf-ts/runtime@2.9.5':
     resolution: {integrity: sha512-SsumigRe3IqNTCQvVZUqDQExsKF72eyAMiWlYb5Jwj3eU4z8UH7JLlSfb/Wjidz4b/chTN6zh5AXBSKl0Asm3A==}
+
+  '@protobuf-ts/runtime@2.9.6':
+    resolution: {integrity: sha512-C0CfpKx4n4LBbUrajOdRj2BTbd3qBoK0SiKWLq7RgCoU6xiN4wesBMFHUOBp3fFzKeZwgU8Q2KtzaqzIvPLRXg==}
 
   '@release-it/conventional-changelog@10.0.0':
     resolution: {integrity: sha512-49qf9phGmPUIGpY2kwfgehs9en1znbPv2zdNn1WMLAH9DtHUh4m6KNSB+mLFGAMUhv24JhsA8ruYRYgluc2UJw==}
@@ -1672,26 +1675,28 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@protobuf-ts/plugin-framework@2.9.5':
+  '@protobuf-ts/plugin-framework@2.9.6':
     dependencies:
-      '@protobuf-ts/runtime': 2.9.5
+      '@protobuf-ts/runtime': 2.9.6
       typescript: 3.9.10
 
-  '@protobuf-ts/plugin@2.9.5':
+  '@protobuf-ts/plugin@2.9.6':
     dependencies:
-      '@protobuf-ts/plugin-framework': 2.9.5
-      '@protobuf-ts/protoc': 2.9.5
-      '@protobuf-ts/runtime': 2.9.5
-      '@protobuf-ts/runtime-rpc': 2.9.5
+      '@protobuf-ts/plugin-framework': 2.9.6
+      '@protobuf-ts/protoc': 2.9.6
+      '@protobuf-ts/runtime': 2.9.6
+      '@protobuf-ts/runtime-rpc': 2.9.6
       typescript: 3.9.10
 
-  '@protobuf-ts/protoc@2.9.5': {}
+  '@protobuf-ts/protoc@2.9.6': {}
 
-  '@protobuf-ts/runtime-rpc@2.9.5':
+  '@protobuf-ts/runtime-rpc@2.9.6':
     dependencies:
-      '@protobuf-ts/runtime': 2.9.5
+      '@protobuf-ts/runtime': 2.9.6
 
   '@protobuf-ts/runtime@2.9.5': {}
+
+  '@protobuf-ts/runtime@2.9.6': {}
 
   '@release-it/conventional-changelog@10.0.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@18.1.2(@types/node@22.10.5)(typescript@5.8.2))':
     dependencies:
