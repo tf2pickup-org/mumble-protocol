@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@protobuf-ts/runtime':
-        specifier: 2.9.6
-        version: 2.9.6
+        specifier: 2.10.0
+        version: 2.10.0
     devDependencies:
       '@protobuf-ts/plugin':
         specifier: 2.9.6
@@ -273,8 +273,8 @@ packages:
   '@protobuf-ts/runtime-rpc@2.9.6':
     resolution: {integrity: sha512-0UeqDRzNxgsh08lY5eWzFJNfD3gZ8Xf+WG1HzbIAbVAigzigwjwsYNNhTeas5H3gco1U5owTzCg177aambKOOw==}
 
-  '@protobuf-ts/runtime@2.9.6':
-    resolution: {integrity: sha512-C0CfpKx4n4LBbUrajOdRj2BTbd3qBoK0SiKWLq7RgCoU6xiN4wesBMFHUOBp3fFzKeZwgU8Q2KtzaqzIvPLRXg==}
+  '@protobuf-ts/runtime@2.10.0':
+    resolution: {integrity: sha512-ypYwGg9Pn3W/2lZ7/HW60hONGuSdzphvOY8Dq7LeNttymDe0y3LaTUUMRpuGqOT6FfrWEMnfQbyqU8AAreo8wA==}
 
   '@release-it/conventional-changelog@10.0.1':
     resolution: {integrity: sha512-Qp+eyMGCPyq5xiWoNK91cWVIR/6HD1QAUNeG6pV2G4kxotWl81k/KDQqDNvrNVmr9+zDp53jI7pVVYQp6mi4zA==}
@@ -1530,14 +1530,14 @@ snapshots:
 
   '@protobuf-ts/plugin-framework@2.9.6':
     dependencies:
-      '@protobuf-ts/runtime': 2.9.6
+      '@protobuf-ts/runtime': 2.10.0
       typescript: 3.9.10
 
   '@protobuf-ts/plugin@2.9.6':
     dependencies:
       '@protobuf-ts/plugin-framework': 2.9.6
       '@protobuf-ts/protoc': 2.9.6
-      '@protobuf-ts/runtime': 2.9.6
+      '@protobuf-ts/runtime': 2.10.0
       '@protobuf-ts/runtime-rpc': 2.9.6
       typescript: 3.9.10
 
@@ -1545,9 +1545,9 @@ snapshots:
 
   '@protobuf-ts/runtime-rpc@2.9.6':
     dependencies:
-      '@protobuf-ts/runtime': 2.9.6
+      '@protobuf-ts/runtime': 2.10.0
 
-  '@protobuf-ts/runtime@2.9.6': {}
+  '@protobuf-ts/runtime@2.10.0': {}
 
   '@release-it/conventional-changelog@10.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@19.0.1(@types/node@22.10.5))':
     dependencies:
