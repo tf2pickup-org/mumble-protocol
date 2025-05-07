@@ -1,0 +1,137 @@
+name: Automatic Dependency Release
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  GITHUB_TOKEN: ${{ secrets.RELEASE_IT_TOKEN }}
+
+jobs:
+  check-and-release:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Configure Git User
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+
+      - name: Check release conditions
+        id: check_conditions
+        env:
+          RENOVATE_AUTHOR_EMAIL: "29139614+renovate[bot]@users.noreply.github.com"
+        run: |
+          echo "Checking conditions for automated release..."
+          SHOULD_RELEASE="false"
+
+          # Get the latest tag. Handle the case where no tags exist yet (first release).
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          COMMIT_RANGE="" # Define the range of commits to check
+
+          if [ -z "$LATEST_TAG" ]; then
+            echo "No previous tag found. Checking all commits on the current branch."
+            # If no tag, check all commits reachable from HEAD
+            COMMIT_RANGE="HEAD"
+          else
+            echo "Last tag found: $LATEST_TAG. Checking commits since then."
+            # If tag exists, check commits between the tag and HEAD
+            COMMIT_RANGE="$LATEST_TAG..HEAD"
+          fi
+
+          # Get commits since the last tag (or all commits if no tag), excluding merge commits.
+          # Format: HASH <commit_author_email> s:SUBJECT
+          COMMITS_SINCE_TAG=$(git log $COMMIT_RANGE --pretty=format:'%H <%ae> s:%s' --no-merges)
+
+          if [ -z "$COMMITS_SINCE_TAG" ]; then
+            echo "No new non-merge commits found since last tag ($LATEST_TAG). No release needed."
+          else
+            echo "Commits since last tag ($LATEST_TAG):"
+            echo "$COMMITS_SINCE_TAG"
+
+            # Count the total number of non-merge commits in the range
+            TOTAL_COMMITS=$(echo "$COMMITS_SINCE_TAG" | wc -l)
+
+            # Count commits made specifically by the Renovate bot (matching email AND semantic prefix 'chore(deps):' or 'fix(deps):')
+            RENOVATE_COMMITS=$(echo "$COMMITS_SINCE_TAG" | grep -E "<$RENOVATE_AUTHOR_EMAIL> s:(chore\(deps\)|fix\(deps\)):" | wc -l)
+
+            echo "Total non-merge commits: $TOTAL_COMMITS"
+            echo "Renovate dependency commits: $RENOVATE_COMMITS"
+
+            # Condition 1: ALL commits must be from Renovate (either chore or fix)
+            if [ "$TOTAL_COMMITS" -eq "$RENOVATE_COMMITS" ] && [ "$TOTAL_COMMITS" -gt 0 ]; then
+              echo "All $TOTAL_COMMITS commit(s) since last tag are Renovate dependency commits"
+
+              # Condition 2: At least one of these Renovate commits must have modified package.json AND be a production dependency update
+              # We use the 'fix(deps):' prefix as a heuristic for production dependency updates, based on common Renovate semantic commit configurations.
+              COMMITS_TOUCHING_PACKAGE_JSON=$(git log $COMMIT_RANGE --pretty=format:%H -- package.json)
+
+              PROD_DEP_UPDATE_FOUND="false" # Flag to track if a relevant production dependency update was found
+
+              if [ -n "$COMMITS_TOUCHING_PACKAGE_JSON" ]; then
+                 echo "Checking Renovate commits that modified package.json for 'fix(deps):' prefix..."
+                 # Iterate through commits that touched package.json
+                 while IFS= read -r commit_hash; do
+                    # Get the author email and subject for the specific commit hash
+                    commit_info=$(git show --no-patch --pretty=format:'%ae s:%s' $commit_hash)
+                    # Check if this commit matches the Renovate author email AND starts with 'fix(deps):'
+                    if echo "$commit_info" | grep -q -E "^$RENOVATE_AUTHOR_EMAIL s:fix\(deps\):"; then
+                       echo "Found Renovate commit ($commit_hash) with 'fix(deps):' prefix that modified package.json"
+                       PROD_DEP_UPDATE_FOUND="true"
+                       break
+                    fi
+                 done <<< "$COMMITS_TOUCHING_PACKAGE_JSON"
+              else
+                 echo "No commits modified package.json in this range"
+              fi
+
+              # Final check: Release only if a production dependency update was found
+              if [ "$PROD_DEP_UPDATE_FOUND" = "true" ]; then
+                echo "At least one Renovate commit with 'fix(deps):' prefix modified package.json"
+                echo "All conditions met for automated release"
+                SHOULD_RELEASE="true"
+              else
+                echo "Although all commits were from Renovate, none modifying package.json had the 'fix(deps):' prefix (or none modified package.json). Assuming no production dependency update. No release needed"
+              fi
+            else
+               echo "Not all commits since the last tag are Renovate dependency commits (or there are no new commits). Human commits might be present. No automated release"
+            fi
+          fi
+
+          # Set the output variable for use in subsequent steps
+          echo "should_release=$SHOULD_RELEASE" >> $GITHUB_OUTPUT
+
+      - name: Release new version
+        if: steps.check_conditions.outputs.should_release == 'true'
+        run: |
+          echo "Conditions met. Triggering release..."
+          pnpm exec release-it --ci
+
+      - name: Release skipped
+        if: steps.check_conditions.outputs.should_release == 'false'
+        run: echo "Conditions for automated release were not met. Skipping release."
