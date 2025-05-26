@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@protobuf-ts/runtime':
-        specifier: 2.10.0
-        version: 2.10.0
+        specifier: 2.11.0
+        version: 2.11.0
     devDependencies:
       '@protobuf-ts/plugin':
         specifier: 2.11.0
@@ -275,9 +275,6 @@ packages:
 
   '@protobuf-ts/runtime-rpc@2.11.0':
     resolution: {integrity: sha512-g/oMPym5LjVyCc3nlQc6cHer0R3CyleBos4p7CjRNzdKuH/FlRXzfQYo6EN5uv8vLtn7zEK9Cy4YBKvHStIaag==}
-
-  '@protobuf-ts/runtime@2.10.0':
-    resolution: {integrity: sha512-ypYwGg9Pn3W/2lZ7/HW60hONGuSdzphvOY8Dq7LeNttymDe0y3LaTUUMRpuGqOT6FfrWEMnfQbyqU8AAreo8wA==}
 
   '@protobuf-ts/runtime@2.11.0':
     resolution: {integrity: sha512-DfpRpUiNvPC3Kj48CmlU4HaIEY1Myh++PIumMmohBAk8/k0d2CkxYxJfPyUAxfuUfl97F4AvuCu1gXmfOG7OJQ==}
@@ -1570,8 +1567,6 @@ snapshots:
   '@protobuf-ts/runtime-rpc@2.11.0':
     dependencies:
       '@protobuf-ts/runtime': 2.11.0
-
-  '@protobuf-ts/runtime@2.10.0': {}
 
   '@protobuf-ts/runtime@2.11.0': {}
 
