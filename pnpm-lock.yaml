@@ -13,8 +13,8 @@ importers:
         version: 2.10.0
     devDependencies:
       '@protobuf-ts/plugin':
-        specifier: 2.10.0
-        version: 2.10.0
+        specifier: 2.11.0
+        version: 2.11.0
       '@release-it/conventional-changelog':
         specifier: 10.0.1
         version: 10.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@19.0.2(@types/node@22.10.5))
@@ -44,6 +44,12 @@ packages:
   '@babel/highlight@7.23.4':
     resolution: {integrity: sha512-acGdbYSfp2WheJoJm/EBBBLh/ID8KDc64ISZ9DYtBmC8/Q204PZJLHyzeB5qMzJ5trcOkybd78M4x2KWsUq++A==}
     engines: {node: '>=6.9.0'}
+
+  '@bufbuild/protobuf@2.5.0':
+    resolution: {integrity: sha512-nniMblXT+dNyubek2OLKAYJnG/in4tmfS2c5CDnIvqfF9kFlERSG3FCBvmdqerpkWuPv0qhdGKReQ2OqKPG20w==}
+
+  '@bufbuild/protoplugin@2.5.0':
+    resolution: {integrity: sha512-8Z/vSynBHQD81WO7430j3FQyZr57EjnRjEwlNfz4/7bEv6vLfROn+ovOg07hA2BNCe7JPnyJzUAb2yZ6W1M7Ww==}
 
   '@conventional-changelog/git-client@1.0.1':
     resolution: {integrity: sha512-PJEqBwAleffCMETaVm/fUgHldzBE35JFk3/9LL6NUA5EXa3qednu+UT6M7E5iBu3zIQZCULYIiZ90fBYHt6xUw==}
@@ -259,22 +265,22 @@ packages:
     resolution: {integrity: sha512-7J6ca1tK0duM2BgVB+CuFMh3idlIVASOP2QvOCbNWDc6JnvjtKa9nufPoJQQ4xrwBonwgT1TIhRRcEtzdVgWsA==}
     engines: {node: ^20.9.0 || >=22.0.0, npm: '>=10.8.2'}
 
-  '@protobuf-ts/plugin-framework@2.10.0':
-    resolution: {integrity: sha512-EuW9irbt+w7Ml1CaAxK6xyl7pSuWVbNy0rsChxJEthMrAVTN5EPdJ3whNWvsRBa+HwRImEl8KHNnRoq/vGOHbg==}
-
-  '@protobuf-ts/plugin@2.10.0':
-    resolution: {integrity: sha512-iMX4C4TVfMNRLn2msK0cVg5jmizjtu5FYiy8EK5Lg6EgyR9TVHeK2rzmufWKYM2Pcg1jSwC0cFcXHQnCoeFxUg==}
+  '@protobuf-ts/plugin@2.11.0':
+    resolution: {integrity: sha512-Y+p4Axrk3thxws4BVSIO+x4CKWH2c8k3K+QPrp6Oq8agdsXPL/uwsMTIdpTdXIzTaUEZFASJL9LU56pob5GTHg==}
     hasBin: true
 
-  '@protobuf-ts/protoc@2.10.0':
-    resolution: {integrity: sha512-S4BtGBh22+uL5E6qLVxV0QNY6tiLVB8QL7RIkvo+KYknipZfSNwubdKy5CPkrwVXzJn4s3cx7bKx1w6BxkBIPg==}
+  '@protobuf-ts/protoc@2.11.0':
+    resolution: {integrity: sha512-GYfmv1rjZ/7MWzUqMszhdXiuoa4Js/j6zCbcxFmeThBBUhbrXdPU42vY+QVCHL9PvAMXO+wEhUfPWYdd1YgnlA==}
     hasBin: true
 
-  '@protobuf-ts/runtime-rpc@2.10.0':
-    resolution: {integrity: sha512-8CS/XPv3+pMK4v8UKhtCdvbS4h9l7aqlteKdRt0/UbIKZ8n0qHj6hX8cBhz2ngvohxCOS0N08zPr9aCLBNhW3Q==}
+  '@protobuf-ts/runtime-rpc@2.11.0':
+    resolution: {integrity: sha512-g/oMPym5LjVyCc3nlQc6cHer0R3CyleBos4p7CjRNzdKuH/FlRXzfQYo6EN5uv8vLtn7zEK9Cy4YBKvHStIaag==}
 
   '@protobuf-ts/runtime@2.10.0':
     resolution: {integrity: sha512-ypYwGg9Pn3W/2lZ7/HW60hONGuSdzphvOY8Dq7LeNttymDe0y3LaTUUMRpuGqOT6FfrWEMnfQbyqU8AAreo8wA==}
+
+  '@protobuf-ts/runtime@2.11.0':
+    resolution: {integrity: sha512-DfpRpUiNvPC3Kj48CmlU4HaIEY1Myh++PIumMmohBAk8/k0d2CkxYxJfPyUAxfuUfl97F4AvuCu1gXmfOG7OJQ==}
 
   '@release-it/conventional-changelog@10.0.1':
     resolution: {integrity: sha512-Qp+eyMGCPyq5xiWoNK91cWVIR/6HD1QAUNeG6pV2G4kxotWl81k/KDQqDNvrNVmr9+zDp53jI7pVVYQp6mi4zA==}
@@ -299,6 +305,11 @@ packages:
 
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
+
+  '@typescript/vfs@1.6.1':
+    resolution: {integrity: sha512-JwoxboBh7Oz1v38tPbkrZ62ZXNHAk9bJ7c9x0eI5zBfBnBYGhURdbnh7Z4smN/MV48Y5OCcZb58n972UtbazsA==}
+    peerDependencies:
+      typescript: '*'
 
   add-stream@1.0.0:
     resolution: {integrity: sha512-qQLMr+8o0WC4FZGQTcJiKBVC59JylcPSrTtk6usvmIDFUOCKegapy1VHQwRbFMOFyb/inzUVqHs+eMYKDM1YeQ==}
@@ -1236,6 +1247,11 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
+  typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
@@ -1315,6 +1331,16 @@ snapshots:
       '@babel/helper-validator-identifier': 7.22.20
       chalk: 2.4.2
       js-tokens: 4.0.0
+
+  '@bufbuild/protobuf@2.5.0': {}
+
+  '@bufbuild/protoplugin@2.5.0':
+    dependencies:
+      '@bufbuild/protobuf': 2.5.0
+      '@typescript/vfs': 1.6.1(typescript@5.4.5)
+      typescript: 5.4.5
+    transitivePeerDependencies:
+      - supports-color
 
   '@conventional-changelog/git-client@1.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)':
     dependencies:
@@ -1528,26 +1554,26 @@ snapshots:
 
   '@phun-ky/typeof@1.2.8': {}
 
-  '@protobuf-ts/plugin-framework@2.10.0':
+  '@protobuf-ts/plugin@2.11.0':
     dependencies:
-      '@protobuf-ts/runtime': 2.10.0
+      '@bufbuild/protobuf': 2.5.0
+      '@bufbuild/protoplugin': 2.5.0
+      '@protobuf-ts/protoc': 2.11.0
+      '@protobuf-ts/runtime': 2.11.0
+      '@protobuf-ts/runtime-rpc': 2.11.0
       typescript: 3.9.10
+    transitivePeerDependencies:
+      - supports-color
 
-  '@protobuf-ts/plugin@2.10.0':
+  '@protobuf-ts/protoc@2.11.0': {}
+
+  '@protobuf-ts/runtime-rpc@2.11.0':
     dependencies:
-      '@protobuf-ts/plugin-framework': 2.10.0
-      '@protobuf-ts/protoc': 2.10.0
-      '@protobuf-ts/runtime': 2.10.0
-      '@protobuf-ts/runtime-rpc': 2.10.0
-      typescript: 3.9.10
-
-  '@protobuf-ts/protoc@2.10.0': {}
-
-  '@protobuf-ts/runtime-rpc@2.10.0':
-    dependencies:
-      '@protobuf-ts/runtime': 2.10.0
+      '@protobuf-ts/runtime': 2.11.0
 
   '@protobuf-ts/runtime@2.10.0': {}
+
+  '@protobuf-ts/runtime@2.11.0': {}
 
   '@release-it/conventional-changelog@10.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.0.0)(release-it@19.0.2(@types/node@22.10.5))':
     dependencies:
@@ -1575,6 +1601,13 @@ snapshots:
   '@types/parse-path@7.0.3': {}
 
   '@types/semver@7.5.8': {}
+
+  '@typescript/vfs@1.6.1(typescript@5.4.5)':
+    dependencies:
+      debug: 4.3.4
+      typescript: 5.4.5
+    transitivePeerDependencies:
+      - supports-color
 
   add-stream@1.0.0: {}
 
@@ -2509,6 +2542,8 @@ snapshots:
   typedarray@0.0.6: {}
 
   typescript@3.9.10: {}
+
+  typescript@5.4.5: {}
 
   typescript@5.8.3: {}
 
