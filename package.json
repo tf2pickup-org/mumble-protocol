@@ -35,7 +35,7 @@
     "@protobuf-ts/plugin": "2.11.1",
     "@release-it/conventional-changelog": "10.0.1",
     "@tsconfig/node16": "16.1.6",
-    "release-it": "19.0.5",
+    "release-it": "19.0.6",
     "tsc-alias": "1.8.16",
     "typescript": "5.9.3"
   }
