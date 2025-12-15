@@ -18,9 +18,9 @@ importers:
       '@release-it/conventional-changelog':
         specifier: 10.0.3
         version: 10.0.3(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.1.0(@types/node@22.10.5))
-      '@tsconfig/node16':
-        specifier: 16.1.8
-        version: 16.1.8
+      '@tsconfig/node18':
+        specifier: 18.2.0
+        version: 18.2.0
       release-it:
         specifier: 19.1.0
         version: 19.1.0(@types/node@22.10.5)
@@ -293,8 +293,8 @@ packages:
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
 
-  '@tsconfig/node16@16.1.8':
-    resolution: {integrity: sha512-T/CfdwFry660WjZor56z0F3pxeCllt8KOxWcHFW6ZEuULKUObTDEMdgtctyuJPxwqyWDsvHRfxHaJ4FIICyoqQ==}
+  '@tsconfig/node18@18.2.0':
+    resolution: {integrity: sha512-yhxwIlFVSVcMym3O31HoMnRXpoenmpIxcj4Yoes2DUpe+xCJnA7ECQP1Vw889V0jTt/2nzvpLQ/UuMYCd3JPIg==}
 
   '@types/node@22.10.5':
     resolution: {integrity: sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==}
@@ -1463,7 +1463,7 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@tsconfig/node16@16.1.8': {}
+  '@tsconfig/node18@18.2.0': {}
 
   '@types/node@22.10.5':
     dependencies:

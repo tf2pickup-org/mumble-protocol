@@ -34,7 +34,7 @@
   "devDependencies": {
     "@protobuf-ts/plugin": "2.11.1",
     "@release-it/conventional-changelog": "10.0.3",
-    "@tsconfig/node16": "16.1.8",
+    "@tsconfig/node18": "18.2.0",
     "release-it": "19.1.0",
     "tsc-alias": "1.8.16",
     "typescript": "5.9.3"
