@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.0.12](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.11...1.0.12) (2026-02-13)
+
 ## [1.0.11](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.10...1.0.11) (2025-06-23)
 
 
