@@ -36,7 +36,7 @@ jobs:
         run: pnpm install
 
       - name: Install protoc
-        uses: arduino/setup-protoc@v1
+        uses: arduino/setup-protoc@v3
 
       - name: Generate proto files
         run: pnpm generate-proto
