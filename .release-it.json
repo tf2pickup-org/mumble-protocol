@@ -2,8 +2,9 @@
   "git": {
     "commitMessage": "chore: release version ${version}"
   },
-  "github": {
-    "release": true
+  "gitea": {
+    "release": true,
+    "host": "https://codeberg.org"
   },
   "npm": {
     "publish": false
