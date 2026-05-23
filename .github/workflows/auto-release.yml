@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  GITHUB_TOKEN: ${{ secrets.RELEASE_IT_TOKEN }}
+  GITEA_TOKEN: ${{ secrets.RELEASE_IT_TOKEN }}
 
 jobs:
   check-and-release:
@@ -39,13 +39,13 @@ jobs:
 
       - name: Configure Git User
         run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          git config user.name "release-bot"
+          git config user.email "release-bot@users.noreply.codeberg.org"
 
       - name: Check release conditions
         id: check_conditions
         env:
-          RENOVATE_AUTHOR_EMAIL: "29139614+renovate[bot]@users.noreply.github.com"
+          RENOVATE_AUTHOR_EMAIL: "renovate[bot]@users.noreply.codeberg.org"
         run: |
           echo "Checking conditions for automated release..."
           SHOULD_RELEASE="false"

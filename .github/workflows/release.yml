@@ -5,7 +5,7 @@ on:
 
 env:
   NODE_VERSION: 20.x
-  GITHUB_TOKEN: ${{ secrets.RELEASE_IT_TOKEN }}
+  GITEA_TOKEN: ${{ secrets.RELEASE_IT_TOKEN }}
 
 jobs:
   release:
@@ -37,7 +37,7 @@ jobs:
       - name: Set git identity
         run: |
           git config user.name "release bot"
-          git config user.email "release-bot@users.noreply.github.com"
+          git config user.email "release-bot@users.noreply.codeberg.org"
 
       - name: Release
         run: pnpm exec release-it --ci
