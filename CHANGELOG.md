@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.15](https://codeberg.org/tf2pickup-org/mumble-protocol/compare/1.0.14...1.0.15) (2026-05-26)
+
+
+### Bug Fixes
+
+* **release:** use release-it-gitea plugin to create Gitea releases ([#5](https://codeberg.org/tf2pickup-org/mumble-protocol/issues/5)) ([d8506d7](https://codeberg.org/tf2pickup-org/mumble-protocol/commits/d8506d709877ff2191afeacfb271a0ca1d738e33))
+
 ## [1.0.14](https://codeberg.org/tf2pickup-org/mumble-protocol/compare/1.0.13...1.0.14) (2026-05-26)
 
 
