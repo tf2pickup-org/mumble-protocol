@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: 20.x
+  NODE_VERSION: 22.x
   GITEA_TOKEN: ${{ secrets.RELEASE_IT_TOKEN }}
 
 jobs:
