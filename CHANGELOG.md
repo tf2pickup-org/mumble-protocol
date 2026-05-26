@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.14](https://codeberg.org/tf2pickup-org/mumble-protocol/compare/1.0.13...1.0.14) (2026-05-26)
+
+
+### Bug Fixes
+
+* **ci:** trigger publish workflow on release created event ([#3](https://codeberg.org/tf2pickup-org/mumble-protocol/issues/3)) ([68d9820](https://codeberg.org/tf2pickup-org/mumble-protocol/commits/68d9820ca1e5619f44a6ed5c281f2ef6620cb55b))
+
 ## [1.0.13](https://codeberg.org/tf2pickup-org/mumble-protocol/compare/1.0.12...1.0.13) (2026-05-26)
 
 
