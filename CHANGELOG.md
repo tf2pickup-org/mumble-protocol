@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.13](https://codeberg.org/tf2pickup-org/mumble-protocol/compare/1.0.12...1.0.13) (2026-05-26)
+
+
+### Bug Fixes
+
+* **ci:** bump Node.js from 20.x to 22.x for pnpm v11 compatibility ([#2](https://codeberg.org/tf2pickup-org/mumble-protocol/issues/2)) ([1280196](https://codeberg.org/tf2pickup-org/mumble-protocol/commits/128019659d15360b64af6ad816de514116744cea)), closes [#113](https://codeberg.org/tf2pickup-org/mumble-protocol/issues/113)
+* **deps:** update Mumble.proto to v1.5.901 ([2d717cf](https://codeberg.org/tf2pickup-org/mumble-protocol/commits/2d717cf342a7d012f6fc14a822e55af0aa0f8911))
+
 ## [1.0.12](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.11...1.0.12) (2026-02-13)
 
 ## [1.0.11](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.10...1.0.11) (2025-06-23)
