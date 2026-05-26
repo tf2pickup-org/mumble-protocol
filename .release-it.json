@@ -2,10 +2,6 @@
   "git": {
     "commitMessage": "chore: release version ${version}"
   },
-  "gitea": {
-    "release": true,
-    "host": "https://codeberg.org"
-  },
   "npm": {
     "publish": false
   },
@@ -13,6 +9,9 @@
     "@release-it/conventional-changelog": {
       "preset": "angular",
       "infile": "CHANGELOG.md"
+    },
+    "release-it-gitea": {
+      "host": "https://codeberg.org"
     }
   }
 }
