@@ -37,6 +37,6 @@
     "@tsconfig/node24": "24.0.4",
     "release-it": "20.0.1",
     "tsc-alias": "1.8.17",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   }
 }
