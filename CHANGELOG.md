@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.13](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.12...1.0.13) (2026-10-30)
+
+### Bug Fixes
+
+* **deps:** update Mumble.proto to v1.5.901 ([#125](https://github.com/tf2pickup-org/mumble-protocol/issues/125)) ([8a9fcce](https://github.com/tf2pickup-org/mumble-protocol/commit/8a9fcce7c9ff0c2cb5ab926839dd2a5505c06605))
+
 ## [1.0.12](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.11...1.0.12) (2026-02-13)
 
 ## [1.0.11](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.10...1.0.11) (2025-06-23)
