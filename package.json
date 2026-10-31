@@ -35,7 +35,7 @@
     "@protobuf-ts/plugin": "2.11.1",
     "@release-it/conventional-changelog": "12.0.2",
     "@tsconfig/node24": "24.0.5",
-    "release-it": "20.2.1",
+    "release-it": "21.1.1",
     "tsc-alias": "1.9.9",
     "typescript": "7.0.2"
   }
