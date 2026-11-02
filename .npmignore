@@ -22,3 +22,6 @@ lerna-debug.log*
 # Source files
 Mumble.ts
 index.ts
+
+# Build scripts
+write-required-fields.js
