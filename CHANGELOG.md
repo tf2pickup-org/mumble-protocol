@@ -1,5 +1,15 @@
 # Changelog
 
+# [1.1.0](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.13...1.1.0) (2026-11-02)
+
+### Bug Fixes
+
+* always write required fields ([#131](https://github.com/tf2pickup-org/mumble-protocol/issues/131)) ([7791a61](https://github.com/tf2pickup-org/mumble-protocol/commit/7791a61990951d8f581f8de11e43ffbb3f73a2d8))
+
+### Features
+
+* re-export MessageType type ([#130](https://github.com/tf2pickup-org/mumble-protocol/issues/130)) ([f21f9a4](https://github.com/tf2pickup-org/mumble-protocol/commit/f21f9a4d0afe703f6a114720ebca90db0f62b323))
+
 ## [1.0.13](https://github.com/tf2pickup-org/mumble-protocol/compare/1.0.12...1.0.13) (2026-10-30)
 
 ### Bug Fixes
