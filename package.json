@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "generate-proto": "protoc --ts_out ./ --ts_opt eslint_disable --proto_path . Mumble.proto",
+    "generate-proto": "protoc --ts_out ./ --ts_opt eslint_disable --proto_path . Mumble.proto && node write-required-fields.js",
     "build": "tsc && tsc-alias",
     "release": "release-it"
   },
